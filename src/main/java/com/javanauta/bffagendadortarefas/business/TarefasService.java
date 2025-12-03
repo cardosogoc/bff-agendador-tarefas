@@ -15,6 +15,7 @@ import java.util.List;
 public class TarefasService {
 
     private final TarefasClient client;
+    private final EmailService emailService;
 
     public TarefasDTOResponse gravarTarefa(String token, TarefasDTORequest dto){
         return client.gravarTarefas(dto, token);
